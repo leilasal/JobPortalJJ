@@ -1,2 +1,6 @@
 # JobPortalJJ
-run with swagger
+swagger
+eclipse ide
+postgresql
+spring rest api's
+
