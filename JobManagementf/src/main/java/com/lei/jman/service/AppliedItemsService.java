@@ -13,7 +13,7 @@ public class AppliedItemsService {
 	@Autowired
     private AppliedItemsRepository appliedItemsRepository;
 
-    public void addOrderedProducts(AppliedItem appliedItem) {
+    public void addAppliedJobs(AppliedItem appliedItem) {
     	appliedItemsRepository.save(appliedItem);
     }
 
