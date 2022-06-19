@@ -32,8 +32,8 @@ public class Applied {
 	    @Column(name = "session_id")
 	    private String sessionId;
 
-	    @OneToMany(mappedBy = "order", fetch = FetchType.LAZY)
-	    private List<AppliedItem> orderItems;
+	    @OneToMany(mappedBy = "applied", fetch = FetchType.LAZY)
+	    private List<AppliedItem> appliedItems;
 
 	    @ManyToOne()
 	    @JsonIgnore
@@ -44,12 +44,12 @@ public class Applied {
 	    }
 
 
-	    public List<AppliedItem> getOrderItems() {
-	        return orderItems;
+	    public List<AppliedItem> getAppliedItems() {
+	        return appliedItems;
 	    }
 
-	    public void setOrderItems(List<AppliedItem> orderItems) {
-	        this.orderItems = orderItems;
+	    public void setAppliedItems(List<AppliedItem> orderItems) {
+	        this.appliedItems = appliedItems;
 	    }
 
 	    public Integer getId() {
